@@ -3,8 +3,8 @@
 <suite name="All Test Suite">
     <test verbose="2" preserve-order="true" name="End-to-End Tests">
         <classes>
-            <class name="com.xxx.LoginTest"/>
-            <class name="com.xxx.AddContactTest"/>
+            <class name="test.LoginTest"/>
+            <class name="test.AddContactTest"/>
             <!-- Add remaining 13 test classes -->
         </classes>
     </test>
