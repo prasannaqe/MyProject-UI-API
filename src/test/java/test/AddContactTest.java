@@ -23,6 +23,7 @@ public class AddContactTest extends BaseTest {
 
     @Test(priority = 1)
     public void addContactViaUI() throws InterruptedException {
+        logger.info("Starting UI Contacts test");
         driver.get(Config.BASE_URL);
         LoginPage loginPage = new LoginPage(driver);
         loginPage.login(Config.EMAIL, Config.PASSWORD);
@@ -31,10 +32,12 @@ public class AddContactTest extends BaseTest {
         contactPage.addContact("John", "Doe", "john.doe@example.com", "1234567890");
         Thread.sleep(2000);
         Assert.assertTrue(contactPage.isContactAdded(), "Contact Not Added!");
+        logger.info("UI Contacts test passed");
     }
 
     @Test(priority = 2)
     public void addContactViaAPI() throws InterruptedException {
+        logger.info("Starting API Contacts test");
         driver.get(Config.BASE_URL);
         LoginPage loginPage = new LoginPage(driver);
         loginPage.login(Config.EMAIL, Config.PASSWORD);
@@ -42,5 +45,6 @@ public class AddContactTest extends BaseTest {
         Thread.sleep(2000);
         Response response = ApiClient.addContact("John", "Doe", "john.doe@example.com", "1234567890", token);
         Assert.assertEquals(response.getStatusCode(), 201, "API Contact Addition Failed!");
+        logger.info("API Contacts test passed");
     }
 }

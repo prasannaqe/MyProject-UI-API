@@ -19,15 +19,19 @@ import utils.Config;
 public class LoginTest extends BaseTest {
     @Test(priority = 1)
     public void loginViaUI() throws InterruptedException {
+        logger.info("Starting UI Login test");
         driver.get(Config.BASE_URL);
         LoginPage loginPage=new LoginPage(driver);
         loginPage.login(Config.EMAIL, Config.PASSWORD);
         Thread.sleep(2000);
         Assert.assertTrue(loginPage.isLoginSuccessful(), "Login Failed!");
+        logger.info("UI Login test passed");
     }
     @Test(priority = 2)
     public void loginViaAPI() {
+        logger.info("Starting UI Login test");
         String token = ApiClient.getAuthToken();
         Assert.assertNotNull(token,"API Login failed");
+        logger.info("API Login test passed");
     }
 }
