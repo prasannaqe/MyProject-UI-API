@@ -7,10 +7,8 @@ import org.apache.logging.log4j.Logger;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
-import org.testng.annotations.AfterMethod;
-import org.testng.annotations.AfterSuite;
-import org.testng.annotations.BeforeMethod;
-import org.testng.annotations.BeforeSuite;
+import org.openqa.selenium.firefox.FirefoxDriver;
+import org.testng.annotations.*;
 import utils.ExtentManager;
 
 public class BaseTest {
@@ -23,12 +21,18 @@ public class BaseTest {
         ExtentManager.initReport();
     }
 
+    @Parameters("browser")
     @BeforeMethod
-    public void setUp(){
-        WebDriverManager.chromedriver().setup();
-        driver=new ChromeDriver();
+    public void setup(@Optional("chrome") String browser) {
+        if (browser.equalsIgnoreCase("chrome")) {
+            WebDriverManager.chromedriver().setup();
+            driver = new ChromeDriver();
+        } else if (browser.equalsIgnoreCase("firefox")) {
+            WebDriverManager.firefoxdriver().setup();
+            driver = new FirefoxDriver();
+        }
         driver.manage().window().maximize();
-        logger.info("Webdriver initialized");
+        logger.info("WebDriver initialized for " + browser);
     }
 
     @AfterMethod
