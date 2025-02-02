@@ -9,6 +9,7 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.testng.annotations.*;
+import utils.DriverManager;
 import utils.ExtentManager;
 
 public class BaseTest {
@@ -24,14 +25,8 @@ public class BaseTest {
     @Parameters("browser")
     @BeforeMethod
     public void setup(@Optional("chrome") String browser) {
-        if (browser.equalsIgnoreCase("chrome")) {
-            WebDriverManager.chromedriver().setup();
-            driver = new ChromeDriver();
-        } else if (browser.equalsIgnoreCase("firefox")) {
-            WebDriverManager.firefoxdriver().setup();
-            driver = new FirefoxDriver();
-        }
-        driver.manage().window().maximize();
+        System.setProperty("browser", browser);
+        driver= DriverManager.getDriver();
         logger.info("WebDriver initialized for " + browser);
     }
 
