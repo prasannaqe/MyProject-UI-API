@@ -1,6 +1,11 @@
 
 `
-java:S2187
-"Add some tests to this class.(ŸÒğ8•†à”Ì2J$a2d22f20-f746-4c4d-9cfc-4163e4055f30
-ƒ
-java:S1128";Remove this unused import 'org.openqa.selenium.WebElement'.(‰ïµ”şÿÿÿÿ8–†à”Ì2J$ede98669-2bd3-4733-be86-d585276d6109
+java:S2187"Add some tests to this class.(ŸÒğ8üÁüÒ2J$93d9e990-3139-4ea5-95f3-3394c9b89075
+‰
+java:S3457#"AFormat specifiers should be used instead of string concatenation.(Ü‡¦şûÿÿÿÿ8ıÁüÒ2J$37558be0-1043-4cd0-a2ca-73218583238d
+‰
+java:S1128"FRemove this unused import 'io.github.bonigarcia.wdm.WebDriverManager'.(°Ëõ‰8ÿÁüÒ2J$d21e8dff-5a56-45b4-b64a-59facd976783
+†
+java:S1128"DRemove this unused import 'org.openqa.selenium.chrome.ChromeDriver'.(†È8ÿÁüÒ2J$ccadd995-accd-4a16-8fb3-20d78d2f7f6b
+
+java:S1128"FRemove this unused import 'org.openqa.selenium.firefox.FirefoxDriver'.(Úª ÿÿÿÿÿ8ÿÁüÒ2J$3eedf6ec-1a1d-4d94-91e2-44c4f64ed31b

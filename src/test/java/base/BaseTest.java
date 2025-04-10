@@ -4,13 +4,18 @@ import com.aventstack.extentreports.ExtentTest;
 import io.github.bonigarcia.wdm.WebDriverManager;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
+import org.openqa.selenium.By;
+import org.openqa.selenium.StaleElementReferenceException;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
+import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.annotations.*;
 import utils.DriverManager;
 import utils.ExtentManager;
+
+import java.time.Duration;
 
 public class BaseTest {
     protected WebDriver driver;
@@ -41,5 +46,16 @@ public class BaseTest {
     @AfterSuite
     public void tearDownReport() {
         ExtentManager.flushReport();
+    }
+
+    public WebElement retryStaleException(){
+        WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
+        return wait.until(driver1 ->{try{
+                    WebElement element = driver.findElement(By.xpath(""));
+                    element.isDisplayed();
+                    return element;
+                }catch (StaleElementReferenceException e){
+                    return null;
+                }});
     }
 }

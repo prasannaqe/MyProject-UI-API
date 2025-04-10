@@ -1,26 +1,26 @@
 
 g
-java:S2925"$Remove this use of "Thread.sleep()".(¯ú™ú8Ý©¹•Ì2J$4ef25043-82c1-4029-9d83-5d23c8b82c6a
+java:S2925"$Remove this use of "Thread.sleep()".(¯ú™ú8Ý©¹•Ì2J$332f387c-ffe8-4bb0-bb76-b3f43f0664a2
 g
-java:S2925 "$Remove this use of "Thread.sleep()".(¯ú™ú8ýÑê•Ì2J$2a4ad003-121b-44c2-a8c4-e62e44f9438b
+java:S2925!"$Remove this use of "Thread.sleep()".(¯ú™ú8ýÑê•Ì2J$74b6e547-4077-4f28-be78-843c41fa946d
 g
-java:S2925*"$Remove this use of "Thread.sleep()".(¯ú™ú8’…ñ•Ì2J$5215d158-46dc-45e4-b89c-c328cc87a6b3
+java:S2925-"$Remove this use of "Thread.sleep()".(¯ú™ú8’…ñ•Ì2J$521ea764-f04c-47dd-b0ec-0fd761186f21
 ‰
-java:S1128"FRemove this unused import 'io.github.bonigarcia.wdm.WebDriverManager'.(°Ëõ‰8’…ñ•Ì2J$b5758129-c6f1-457e-ad12-fe8adedb1d0c
+java:S1128"FRemove this unused import 'io.github.bonigarcia.wdm.WebDriverManager'.(°Ëõ‰8Â˜Ä–Ì2J$c02caa7f-0964-493d-88a9-1d531ae14e55
 
-java:S1128"7Remove this unused import 'io.restassured.RestAssured'.(ºÉµ±ùÿÿÿÿ8’…ñ•Ì2J$2d614725-9310-4a67-bbec-ccc34f54e58e
+java:S1128"7Remove this unused import 'io.restassured.RestAssured'.(ºÉµ±ùÿÿÿÿ8Â˜Ä–Ì2J$1900e4ac-252a-4f0d-b46f-f47d192b63e7
 v
-java:S1128"3Remove this unused import 'org.openqa.selenium.By'.(ÿŠÞ›8’…ñ•Ì2J$119aacf8-d36c-4c63-b9d3-80d0f0040567
+java:S1128"3Remove this unused import 'org.openqa.selenium.By'.(ÿŠÞ›8Â˜Ä–Ì2J$bf75ae61-20e6-4136-bbaa-c570d579cdd1
 }
-java:S1128	":Remove this unused import 'org.openqa.selenium.WebDriver'.(ñšÿÀ8’…ñ•Ì2J$964ddd68-7c71-45e6-9054-8dc6ded37519
+java:S1128	":Remove this unused import 'org.openqa.selenium.WebDriver'.(ñšÿÀ8Â˜Ä–Ì2J$89ffc79d-559f-42cc-8263-8c0dac20f47d
 ƒ
 java:S1128
-";Remove this unused import 'org.openqa.selenium.WebElement'.(‰ïµ”þÿÿÿÿ8’…ñ•Ì2J$3ab6c724-8aff-41ba-927b-2f089aa94efe
+";Remove this unused import 'org.openqa.selenium.WebElement'.(‰ïµ”þÿÿÿÿ8Â˜Ä–Ì2J$934b4f8c-bdc0-42e5-ad79-342f2a1de8de
 †
-java:S1128"DRemove this unused import 'org.openqa.selenium.chrome.ChromeDriver'.(†È8’…ñ•Ì2J$75bd37d4-cdd8-4e2c-92f2-f8b8c53051da
+java:S1128"DRemove this unused import 'org.openqa.selenium.chrome.ChromeDriver'.(†È8Ã˜Ä–Ì2J$15accab0-b601-4ec0-aadc-789dc34a3ef1
 €
-java:S1128"=Remove this unused import 'org.testng.annotations.AfterTest'.(Ü³¹Ê8“…ñ•Ì2J$c429776a-aa27-496b-ab01-f7c3b6e7831d
+java:S1128"=Remove this unused import 'org.testng.annotations.AfterTest'.(Ü³¹Ê8Ã˜Ä–Ì2J$e3caca8e-943a-400a-81d0-4154398b9e7d
 ˆ
-java:S1128"@Remove this unused import 'org.testng.annotations.BeforeMethod'.(‹åóùùÿÿÿÿ8“…ñ•Ì2J$4c7d366f-f26f-4459-afd9-fa4464f1a481
+java:S1128"@Remove this unused import 'org.testng.annotations.BeforeMethod'.(‹åóùùÿÿÿÿ8Ã˜Ä–Ì2J$c9497512-b000-4990-98e2-4fd819fd6327
 †
-java:S1128">Remove this unused import 'org.testng.annotations.BeforeTest'.(‚µö¨üÿÿÿÿ8“…ñ•Ì2J$2b838500-68eb-4079-9cbc-08c2c37cea7f
+java:S1128">Remove this unused import 'org.testng.annotations.BeforeTest'.(‚µö¨üÿÿÿÿ8Ã˜Ä–Ì2J$36bf8db1-b847-43fe-bcbd-576d519e10f7
