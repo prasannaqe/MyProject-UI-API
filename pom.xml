@@ -76,6 +76,11 @@
             <version>1.18.30</version> <!-- Use the latest version -->
             <scope>provided</scope>
         </dependency>
+        <dependency>
+            <groupId>com.deque.html.axe-core</groupId>
+            <artifactId>selenium</artifactId>
+            <version>4.10.1</version>
+        </dependency>
     </dependencies>
     <build>
         <plugins>
